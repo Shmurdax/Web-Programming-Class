@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Business Card - Matthew Miller</title>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-content">
+
+      <!-- Left: Photo -->
+      <div class="photo-side">
+        <img src="MM Logo.jpg" 
+             alt="Profile photo" 
+             class="profile-photo">
+      </div>
+
+      <!-- Right: Information -->
+      <div class="info-side">
+
+        <div class="main-info">
+          <h1>Matthew Miller</h1>
+          <div class="title">Computer Science Student</div>
+          <div class="university">Arkansas Tech University</div>
+        </div>
+
+        <div class="contact-bar">
+          <div>
+            <div class="info-line">(123) 456-7890</div>
+            <div class="info-line">matthew.miller@atu.edu</div>
+            <div class="info-line">
+              <a href="https://www.atu.edu/cs" 
+                 class="profile-link" 
+                 target="_blank">
+                Computer Science Department
+              </a>
+            </div>
+          </div>
+
+          <!-- QR Code (bottom-right overlay) -->
+          <div class="qr-code">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.atu.edu" 
+                 alt="QR Code to department page">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
