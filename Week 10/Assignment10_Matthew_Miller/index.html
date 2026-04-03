@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Weather Application</h1>
+            <p class="subtitle">Real-time Weather API</p>
+
+        </header>
+
+        <div class="main-content">
+            <div class="search-box">
+                <div class="input-wrapper">
+                    <span class="input-icon">📍</span>
+                    <input type="text" id="city-input" placeholder="Enter city name">
+                    
+                </div>
+                <button id="search-btn">Get Weather</button>
+
+            </div>
+
+            <div id="loading" class="loading">⏳ Gathering the latest weather...</div>
+            <div id="error-msg" class="error-message"></div>
+
+            <div id="weather-result" class="result">
+                <div class="city-header">
+                    <div class="city-name" id="display-city"></div>
+                    <div id="weather-icon" class="icon-container"></div>
+
+                </div>
+
+                <div id="temperature" class="temperature"></div>
+                <div id="condition" class="condition"></div>
+
+                <div class="details">
+                    <div class="detail-item">
+                        <span class="detail-emoji">💧</span>
+                        <div>
+                            <div class="detail-label">Humidity</div>
+                            <div id="humidity" class="detail-value"></div>
+
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-emoji">🌬️</span>
+                        <div>
+                            <div class="detail-label">Wind Speed</div>
+                            <div id="wind-speed" class="detail-value"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Open-Meteo API
+
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
