@@ -1,27 +1,24 @@
-/* Start Index Page Stuff */
+/* ====================== GLOBAL STYLES ====================== */
 body {
     background: linear-gradient(to bottom, rgb(226, 192, 154), #c99c69);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100dvh;           /* Best for mobile - fixes footer jump */
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 header {
-    background-color: #6e4b3a;
-    color: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
     background: linear-gradient(to right, #6e4b3a, #a2724e);
     color: white;
     padding: 1.2rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .header-left h1 {
@@ -65,18 +62,19 @@ header {
     font-size: 20px;
 }
 
+/* ====================== INDEX / HOME PAGE ====================== */
 #hero {
-  background-image: url('../images/images/gravelbg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  position: relative;
+    background-image: url('../images/images/gravelbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
 }
 
 .hero-overlay {
@@ -92,7 +90,6 @@ header {
     0% { opacity: 0; transform: translateY(30px); }
     100% { opacity: 1; transform: translateY(0); }
 }
-
 
 .family-trusted {
     font-family: 'Merriweather', serif;
@@ -112,9 +109,8 @@ header {
 }
 
 #services {
-  padding: 4rem 1rem;
-  text-align: center;
-  background: linear-gradient(to bottom, rgb(226, 192, 154), #c99c69);
+    padding: 4rem 1rem;
+    text-align: center;
 }
 
 .service-grid {
@@ -123,7 +119,7 @@ header {
     gap: 5rem;
     margin-top: 1rem;
 }
-    
+
 .service-card {
     display: flex;
     flex-direction: column;
@@ -160,52 +156,29 @@ header {
 }
 
 #testimonial {
-  padding: 4rem 1rem;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  color: white;
-  text-align: center;
-  background: linear-gradient(to bottom,#c99c69, #8b643e);
+    padding: 4rem 1rem;
+    background: linear-gradient(to bottom, #c99c69, #8b643e);
+    color: white;
+    text-align: center;
 }
 
 .quote-banner {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 800px;
-  margin: 0 auto;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 blockquote {
-  font-family: 'Merriweather', serif;
-  font-size: 1.6rem;
-  line-height: 1.6;
-  margin: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
-footer {
-    background: linear-gradient(to right, #6e4b3a, #a2724e);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    font-size: 1rem;
-    
-}
-
-footer a {
-    color: #ffddb3;
-    text-decoration: underline;
-    font-weight: 500;
-}
-
-footer p {
-    margin: 0.5rem 0;
-}
-/* End Index Page Stuff */
-
-/* Start About Us Page related CSS */
+/* ====================== ABOUT PAGE ====================== */
 #our-story {
     position: relative;
     overflow: hidden;
@@ -234,7 +207,9 @@ footer p {
 }
 
 #dad-pic-container {
-    position: absolute; top: 10px; left: 30px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
     width: 25%;
     max-width: 500px;
     height: auto;
@@ -245,7 +220,6 @@ footer p {
 #our-story img {
     max-width: 100%;
     height: auto;
-    display: flex;
     border-radius: 5%;
     box-shadow: 0 0 45px rgba(0, 0, 0, 0.5);
 }
@@ -260,18 +234,16 @@ footer p {
     color: white;
     padding: 10px 20px;
     margin-right: 30%;
-    text-align: left;
     text-decoration: none;
     display: inline-block;
     border-radius: 10px;
 }
 
 #about-button:hover {
-  background-color: #8e793e;
+    background-color: #8e793e;
 }
-/* End About Us Page related CSS */
 
-/* Start Years Active Counter Stuff */
+/* Years Counter */
 #year-counter {
     display: flex;
     justify-content: left;
@@ -281,14 +253,6 @@ footer p {
     flex-wrap: wrap;
 }
 
-.counter-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1000px;
-}
-  
 .year-number {
     font-size: 12rem;
     font-family: 'Alfa Slab One', cursive;
@@ -310,20 +274,6 @@ footer p {
     margin: 1rem 0;
 }
 
-.counter-button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    background-color: #d9bf7d;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.counter-button:hover {
-    background-color: #8e793e;
-}
-
 .counter-quote {
     margin-left: 15%;
     max-width: 400px;
@@ -333,131 +283,346 @@ footer p {
     line-height: 1.6;
 }
 
-.counter-quote footer {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: #777;
-}
-/* End Of Years Active Counter Stuff */
-
-/* Start of Prices and Services Stuff */
+/* ====================== PRICES PAGE ====================== */
 #services-label {
-  text-align: center;
-  padding: 4rem 1rem 2rem;
-  background-color: #fff7ed;
-  border-bottom: 3px solid #c99c69;
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+    background-color: #fff7ed;
+    border-bottom: 3px solid #c99c69;
 }
 
 #services-label h1 {
-  font-family: 'Alfa Slab One', serif;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #6e4b3a;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #6e4b3a;
 }
 
 #services-label p {
-  font-size: 1.2rem;
-  color: #444;
-  max-width: 700px;
-  margin: 0 auto;
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 #services-list {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 3rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
 }
 
-/* Actual service card layout */
 .horizontal-card {
-  display: flex;
-  align-items: stretch; /* ensures children match height */
-  height: auto; /* let content determine height */
-  background-color: #e9dbcb;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  margin-bottom: 3rem;
+    display: flex;
+    align-items: stretch;
+    background-color: #e9dbcb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 3rem;
 }
 
 .horizontal-card:hover {
-  transform: translateY(-4px);
+    transform: translateY(-4px);
 }
 
-/* Image inside card */
 .horizontal-card .side-image {
-  width: 250px;
-  height: auto;              /* remove hard height */
-  flex-shrink: 0;            /* don't let it shrink */
-  object-fit: cover;
-  display: block;
-  align-self: stretch;       /* ✅ force vertical stretch inside flex parent */
+    width: 250px;
+    flex-shrink: 0;
+    object-fit: cover;
+    align-self: stretch;
 }
 
-/* Text content inside card */
 .horizontal-card .card-text {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* optional: centers vertically */
-  padding: 1.5rem;
+    flex: 1;
+    padding: 1.5rem;
 }
 
 .horizontal-card .card-text h3 {
-  margin-top: 0;
-  font-size: 1.6rem;
-  color: #6e4b3a;
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #6e4b3a;
 }
 
 .horizontal-card .card-text p {
-  margin-top: 0.5rem;
-  color: #333;
+    margin-top: 0.5rem;
+    color: #333;
 }
 
 .horizontal-card .card-text .price {
-  font-weight: bold;
-  color: #a2724e;
-  margin-top: 1rem;
-  display: inline-block;
+    font-weight: bold;
+    color: #a2724e;
+    margin-top: 1rem;
+    display: inline-block;
 }
 
 #quote-section {
-  background-color: #fff7ed;
-  border-top: 3px solid #c99c69;
-  text-align: center;
-  padding: 4rem 1rem;
+    background-color: #fff7ed;
+    border-top: 3px solid #c99c69;
+    text-align: center;
+    padding: 4rem 1rem;
 }
 
 #quote-section h2 {
-  font-family: 'Alfa Slab One', serif;
-  font-size: 2rem;
-  color: #6e4b3a;
-  margin-bottom: 1rem;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 2rem;
+    color: #6e4b3a;
+    margin-bottom: 1rem;
 }
 
 #quote-section p {
-  font-size: 1.15rem;
-  color: #444;
-  max-width: 700px;
-  margin: 0 auto 2rem;
+    font-size: 1.15rem;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto 2rem;
 }
 
 .cta-button {
-  background-color: #d9bf7d;
-  color: white;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+    background-color: #d9bf7d;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #8e793e;
+    background-color: #8e793e;
 }
 
+/* ====================== CONTACT PAGE ====================== */
+.text-box {
+    max-width: 700px;
+    margin: 5rem auto;
+    padding: 3rem 2.5rem;
+    background-color: rgba(255, 248, 235, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    color: #333;
+}
 
-/* End of Prices and Services Stuff */
+.text-box h1 {
+    font-family: 'Alfa Slab One', serif;
+    font-size: 3rem;
+    color: #6e4b3a;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.text-box p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin: 1.2rem 0;
+}
+
+.text-box a {
+    color: #1877f2;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.text-box a:hover {
+    color: #0e5a8a;
+}
+
+/* ====================== FOOTER ====================== */
+footer {
+    margin-top: auto;
+    background: linear-gradient(to right, #6e4b3a, #a2724e);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* ====================== RESPONSIVE DESIGN ====================== */
+
+/* Small Mobile (phones < 576px) */
+@media (max-width: 575px) {
+    
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .header-center {
+        position: static;
+        transform: none;
+        margin: 0.5rem 0;
+    }
+
+    .header-left h1 {
+        font-size: 1.65rem;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .header-right nav ul {
+        flex-direction: column;
+        gap: 0.7rem;
+        align-items: center;
+    }
+
+    .header-right nav a {
+        font-size: 1.15rem;
+    }
+
+    /* Hero */
+    #hero {
+        height: 75vh;
+        background-attachment: scroll;
+    }
+
+    .hero-overlay {
+        margin: 0 1rem;
+        padding: 2rem 1.5rem;
+        max-width: none;
+        width: calc(100% - 2rem);
+        border-radius: 12px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .family-trusted {
+        font-size: 1.35rem;
+    }
+
+    .req-button {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
+
+    /* Services */
+    #services {
+        padding: 3rem 1rem;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* About Page */
+    #our-story {
+        text-align: center;
+        padding: 2.5rem 1rem;
+    }
+
+    .story-container {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    #dad-pic-container {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 2rem;
+    }
+
+    #about-button {
+        margin: 1.5rem auto 0;
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    /* Years Counter */
+    .year-number {
+        font-size: 6rem;
+    }
+
+    #year-counter {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .counter-quote {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    /* Prices Page */
+    .horizontal-card {
+        flex-direction: column;
+    }
+
+    .horizontal-card .side-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Contact Page */
+    .text-box {
+        margin: 2.5rem 1rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .text-box h1 {
+        font-size: 2.4rem;
+    }
+
+    .text-box p {
+        font-size: 1.15rem;
+    }
+
+    /* Final Footer Fix - Keeps footer at bottom on short pages */
+    footer {
+        padding: 2.5rem 1rem;
+    }
+}
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 991px) {
+    .header-left h1 {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+    }
+
+    .horizontal-card .side-image {
+        width: 220px;
+    }
+
+    #our-story {
+        padding: 3rem 1.5rem;
+    }
+
+    .story-container {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    #dad-pic-container {
+        width: 35%;
+    }
+}
+
+/* Large Desktops */
+@media (min-width: 1200px) {
+    .header-left h1 {
+        font-size: 2.2rem;
+    }
+}
