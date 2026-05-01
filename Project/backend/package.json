@@ -1,0 +1,25 @@
+{
+  "name": "cross-county-material-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Cross County Material inventory and sales tracking",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "inventory",
+    "materials",
+    "mongodb",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.22.1",
+    "mongoose": "^7.8.9"
+  }
+}
