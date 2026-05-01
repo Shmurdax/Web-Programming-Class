@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    min-height: 100dvh;           /* Best for mobile - fixes footer jump */
+    min-height: 100dvh;           
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -284,9 +284,10 @@ blockquote {
 }
 
 /* ====================== PRICES PAGE ====================== */
+
 #services-label {
     text-align: center;
-    padding: 4rem 1rem 2rem;
+    padding: 2rem 1rem 3rem; 
     background-color: #fff7ed;
     border-bottom: 3px solid #c99c69;
 }
@@ -308,7 +309,7 @@ blockquote {
 #services-list {
     max-width: 900px;
     margin: 0 auto;
-    padding: 3rem 1rem;
+    padding: 4rem 1rem 2rem; 
 }
 
 .horizontal-card {
@@ -320,6 +321,10 @@ blockquote {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     margin-bottom: 3rem;
+}
+
+.horizontal-card:last-child {
+    margin-bottom: 0;
 }
 
 .horizontal-card:hover {
@@ -356,29 +361,8 @@ blockquote {
     display: inline-block;
 }
 
-#quote-section {
-    background-color: #fff7ed;
-    border-top: 3px solid #c99c69;
-    text-align: center;
-    padding: 4rem 1rem;
-}
-
-#quote-section h2 {
-    font-family: 'Alfa Slab One', serif;
-    font-size: 2rem;
-    color: #6e4b3a;
-    margin-bottom: 1rem;
-}
-
-#quote-section p {
-    font-size: 1.15rem;
-    color: #444;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-}
-
 .cta-button {
-    background-color: #d9bf7d;
+    background-color: #6e4b3a;   
     color: white;
     padding: 1rem 2rem;
     font-size: 1.1rem;
@@ -387,10 +371,11 @@ blockquote {
     text-decoration: none;
     display: inline-block;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .cta-button:hover {
-    background-color: #8e793e;
+    background-color: #a2724e;    
 }
 
 /* ====================== CONTACT PAGE ====================== */
@@ -567,7 +552,6 @@ footer {
         height: 200px;
     }
 
-    /* Contact Page */
     .text-box {
         margin: 2.5rem 1rem;
         padding: 2rem 1.5rem;
@@ -581,7 +565,6 @@ footer {
         font-size: 1.15rem;
     }
 
-    /* Final Footer Fix - Keeps footer at bottom on short pages */
     footer {
         padding: 2.5rem 1rem;
     }
